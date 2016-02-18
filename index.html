@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="CustomerModule">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Customers App</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.min.js"></script>
+    <script src="modules/customerModule.js"></script>
+    <script src="controllers/customerController.js"></script>
+    <script src="controllers/ordersController.js"></script>
+    <script src="controllers/allOrdersController.js"></script>
+    <script src="services/customerFactory.js"></script>
+    <!--<script src="services/customerService.js"></script>-->
+</head>
+<body>
+    <!--<div ng-hide="isHidden">
+        Name: <input type="text" ng-model="name" /> {{name}}
+    </div>
+    Hide: <input type="checkbox" ng-model="isHidden"/>
+    -->
+    
+    <header>
+        <nav class="navbar navbar-default">   
+            <ul class="nav navbar-nav">
+                <li><a href="#/customers">Customers</a></li>
+                <li><a href="#/orders">Orders</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+    <div class="mainbody" ng-view></div>
+</body>
+</html>
